@@ -1,1 +1,18 @@
 See assignment in Alexa: https://alexa.bitmaker.co/cohorts/67/assignments/2042/latest
+
+Learning Goals:
+
+Routes:
+Nested resources
+Named routes
+Models:
+Associations
+belongs_to
+has_many
+Views:
+Adding Links with View Helpers
+Partials
+Authentication (Login and Signup):
+Sessions
+has_secure_password
+bcrypt
