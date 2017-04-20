@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
   end
 
   def new
-    @prodcut = Product.new
+    @product = Product.new
   end
 
   def edit

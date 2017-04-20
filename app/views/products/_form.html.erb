@@ -4,20 +4,27 @@
   <h2><%=  pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
 
   <ul>
-    <% @product.errors.fill_messages.each do |msg| %>
+    <% @product.errors.full_messages.each do |msg| %>
     <li><%= msg %></li>
     <% end %>
   </ul>
 </div>
 <% end %>
 <div class="field">
-  <%= f.lable :name %><br />
+  <%= f.label :name %><br />
   <%= f.text_field :name %>
 </div>
 <div class="field">
   <%= f.label :description %><br />
-  <%= f.number_field :price_in_cents %>
+  <%= f.text_area :description %>
 </div>
+<div class="field">
+  <%= f.label :price_in_cents %><br />
+  <%= f.number_field :price_in_cents %>
+
+</div>
+
+
 <div class="actions">
   <%= f.submit %>
 </div>
