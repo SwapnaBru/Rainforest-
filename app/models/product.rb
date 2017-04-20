@@ -4,7 +4,7 @@ class Product < ApplicationRecord
 
   def formatted_price
     price_in_dollars = price_in_cents.to_f / 100
-    aprintf("%.2f", price_in_dollars)
+    sprintf("%.2f", price_in_dollars)
 
   end
 
